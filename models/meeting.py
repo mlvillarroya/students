@@ -9,6 +9,8 @@ class Meeting(models.Model):
     duration = fields.Float(string="Duration (hours)", default=1.0)
     subject = fields.Char(string="Subject")
     notes = fields.Text(string="Notes")
+    teacher_id = fields.Many2one('res.partner', string="Teacher", domain=[('is_teacher', '=', True)])
+    office_id = fields.Many2one('students.office', string="Office")
 
     @api.depends('student_id')
     def _compute_display_name(self):

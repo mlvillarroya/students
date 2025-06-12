@@ -13,6 +13,7 @@ class ResPartner(models.Model):
 
     is_student = fields.Boolean(string="Is Student")
     is_family_member = fields.Boolean(string="Is relative")
+    is_teacher = fields.Boolean(string="Is Teacher")
 
     relatives_ids = fields.Many2many(
         'res.partner',
