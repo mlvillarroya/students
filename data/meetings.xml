@@ -1,0 +1,284 @@
+<odoo>
+
+
+    <!-- Día 1 -->
+    <record id="meeting1" model="students.meeting">
+        <field name="student_id" ref="student1"/>
+        <field name="subject">Tècniques d'estudi</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            L'alumne ha après tècniques bàsiques d'organització del temps d'estudi.
+            S'han establert rutines diàries i priorització de tasques.
+        </field>
+    </record>
+
+    <record id="meeting2" model="students.meeting">
+        <field name="student_id" ref="student2"/>
+        <field name="subject">Comprensió lectora</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Treball en estratègies per millorar la comprensió de textos complexos.
+            Pràctica amb resums i esquemes conceptuals.
+        </field>
+    </record>
+
+    <record id="meeting3" model="students.meeting">
+        <field name="student_id" ref="student3"/>
+        <field name="subject">Gestió de l'estrès</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Tècniques de relaxació i respiració per controlar l'ansietat davant els exàmens.
+            Planificació realista d'objectius.
+        </field>
+    </record>
+
+    <record id="meeting4" model="students.meeting">
+        <field name="student_id" ref="student4"/>
+        <field name="subject">Memorització efectiva</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Pràctica amb mnemotècniques i associacions visuals per millorar la retenció.
+            Exercicis de repàs espaiat.
+        </field>
+    </record>
+
+    <record id="meeting5" model="students.meeting">
+        <field name="student_id" ref="student5"/>
+        <field name="subject">Resolució de problemes</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Estratègies per abordar exercicis matemàtics. Anàlisi d'errors comuns
+            i mètodes de verificació de resultats.
+        </field>
+    </record>
+
+    <!-- Día 2 -->
+    <record id="meeting6" model="students.meeting">
+        <field name="student_id" ref="student6"/>
+        <field name="subject">Tècniques d'estudi</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Millora en la tècnica de subratllat i presa d'apunts.
+            Ús efectiu de colors i símbols per organitzar la informació.
+        </field>
+    </record>
+
+    <record id="meeting7" model="students.meeting">
+        <field name="student_id" ref="student7"/>
+        <field name="subject">Expressió escrita</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Treball en l'estructuració de redaccions i ús de connectors.
+            Correcció d'errors gramaticals freqüents.
+        </field>
+    </record>
+
+    <record id="meeting8" model="students.meeting">
+        <field name="student_id" ref="student8"/>
+        <field name="subject">Memorització efectiva</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Pràctica amb tècniques d'associació i repàs espaiat per a vocabulari en llengua estrangera.
+            L'alumne ha mostrat millora en la retenció a llarg termini.
+        </field>
+    </record>
+
+    <record id="meeting9" model="students.meeting">
+        <field name="student_id" ref="student9"/>
+        <field name="subject">Resolució de problemes matemàtics</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Estratègia de descomposició de problemes complexos en parts més simples.
+            L'alumne ha après a identificar les dades clau i aplicar fórmules adequadament.
+        </field>
+    </record>
+
+    <record id="meeting10" model="students.meeting">
+        <field name="student_id" ref="student10"/>
+        <field name="subject">Lectura ràpida</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Tècniques per millorar la velocitat de lectura sense perdre comprensió.
+            Pràctica amb textos graduats i exercicis de seguiment visual.
+        </field>
+    </record>
+
+    <!-- Día 3 -->
+    <record id="meeting11" model="students.meeting">
+        <field name="student_id" ref="student11"/>
+        <field name="subject">Organització d'apunts</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Sistema personalitzat per a prendre i organitzar apunts efectius.
+            Ús de codis de colors i esquemes jeràrquics adaptats a l'estil d'aprenentatge.
+        </field>
+    </record>
+
+    <record id="meeting12" model="students.meeting">
+        <field name="student_id" ref="student12"/>
+        <field name="subject">Expressió oral</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Tècniques per millorar l'exposició oral en presentacions acadèmiques.
+            Treball en postura, contacte visual i modulació de la veu.
+        </field>
+    </record>
+
+    <record id="meeting13" model="students.meeting">
+        <field name="student_id" ref="student13"/>
+        <field name="subject">Gestió del temps</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Creació d'horaris realistes amb blocs d'estudi i descans.
+            Ús de la tècnica Pomodoro adaptada a les necessitats de l'alumne.
+        </field>
+    </record>
+
+    <record id="meeting14" model="students.meeting">
+        <field name="student_id" ref="student14"/>
+        <field name="subject">Investigació acadèmica</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Estratègies per buscar i seleccionar fonts fiables.
+            Pràctica en la citació correcta i evitatge del plagi.
+        </field>
+    </record>
+
+    <record id="meeting15" model="students.meeting">
+        <field name="student_id" ref="student15"/>
+        <field name="subject">Autoavaluació</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Desenvolupament d'habilitats per identificar els propis progressos i dificultats.
+            Creació d'un registre d'autoobservació per fer seguiment.
+        </field>
+    </record>
+
+    <!-- Día 4 - Reuniones 16 a 20 -->
+    <record id="meeting16" model="students.meeting">
+        <field name="student_id" ref="student16"/>
+        <field name="subject">Tècniques de repàs</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Sistema de repàs espaiat adaptat a la corba de l'oblit.
+            L'alumne ha après a programar sessions de repàs efectives utilitzant targetes d'aprenentatge.
+        </field>
+    </record>
+
+    <record id="meeting17" model="students.meeting">
+        <field name="student_id" ref="student17"/>
+        <field name="subject">Estratègies per a exàmens tipus test</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Tècniques per analitzar preguntes, descartar opcions incorrectes i gestionar el temps.
+            Simulació pràctica amb feedback immediat.
+        </field>
+    </record>
+
+    <record id="meeting18" model="students.meeting">
+        <field name="student_id" ref="student18"/>
+        <field name="subject">Connexió entre conceptes</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Desenvolupament de xarxes conceptuals per relacionar continguts de diferents assignatures.
+            L'alumne mostra millora en la transferència d'aprenentatges.
+        </field>
+    </record>
+
+    <record id="meeting19" model="students.meeting">
+        <field name="student_id" ref="student19"/>
+        <field name="subject">Gestió d'ansietat</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Tècniques de respiració i reestructuració cognitiva per a situacions d'avaluació.
+            Rol-playing de situacions estressants amb estratègies d'afrontament.
+        </field>
+    </record>
+
+    <record id="meeting20" model="students.meeting">
+        <field name="student_id" ref="student20"/>
+        <field name="subject">Ús de tecnologia</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Selecció i ús d'aplicacions educatives per a organització i aprenentatge.
+            Configuració d'eines específiques adaptades a les necessitats de l'alumne.
+        </field>
+    </record>
+
+    <!-- Día 5 -->
+    <record id="meeting21" model="students.meeting">
+        <field name="student_id" ref="student21"/>
+        <field name="subject">Preparació d'exàmens</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Simulacre d'examen amb temps limitat. Anàlisi dels resultats
+            i identificació d'àrees a reforçar.
+        </field>
+    </record>
+
+    <record id="meeting22" model="students.meeting">
+        <field name="student_id" ref="student22"/>
+        <field name="subject">Concentració</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Tècniques per millorar l'atenció sostenida. Eliminació de distraccions
+            i creació d'entorns d'estudi efectius.
+        </field>
+    </record>
+
+    <record id="meeting23" model="students.meeting">
+        <field name="student_id" ref="student23"/>
+        <field name="subject">Ús de mapes mentals</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Creació i aplicació de mapes mentals per a diferents assignatures.
+            Adaptació a l'estil d'aprenentatge de l'alumne.
+        </field>
+    </record>
+
+    <record id="meeting24" model="students.meeting">
+        <field name="student_id" ref="student24"/>
+        <field name="subject">Autoavaluació</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Desenvolupament d'habilitats per avaluar el propi treball.
+            Identificació de punts forts i febles en les tècniques d'estudi.
+        </field>
+    </record>
+
+    <record id="meeting25" model="students.meeting">
+        <field name="student_id" ref="student25"/>
+        <field name="subject">Planificació a llarg termini</field>
+        <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="duration">1</field>
+        <field name="notes">
+            Creació d'un calendari d'estudi per al proper trimestre.
+            Establiment d'objectius realistes i sistemes de recompenses.
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,136 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="students.view_student_list" >
+            <field name="name">Students list</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <list string="Students">
+                    <field name="name"/>
+                    <field name="lastname"/>
+                    <field name="age"/>
+                    <field name="email"/>
+                    <field name="school_id"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="students.view_student_form" model="ir.ui.view">
+            <field name="name">students.student.form</field>
+            <field name="model">res.partner</field>
+            <field name="priority" eval="1"/>
+            <field name="arch" type="xml">
+                <form string="Partners">
+                <sheet>
+                <div class="oe_button_box" name="button_box"/>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <field name="image_1920" widget='image' class="oe_avatar" options='{"preview_image": "avatar_128"}'/>
+                    <div class="oe_title mb24">
+                        <h1>
+                            <field id="individual" options="{'line_breaks': False}" widget="text" class="text-break" name="name" default_focus="1" placeholder="Student name" invisible="is_company" required="is_student == 'True'"/>
+                            <field id="individual" options="{'line_breaks': False}" widget="text" class="text-break" name="lastname" default_focus="1" placeholder="Student last name" invisible="is_company" required="is_student == 'True'"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="birthdate" string="Birth Date"/>
+                            <field name="age" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="school_id" string="School"/>
+                            <field name="email" string="Email"/>
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Relatives" name="contact_addresses" autofocus="autofocus">
+                            <field  name="relatives_ids"
+                                    domain="[('is_family_member', '=', True)]"
+                                    context="{
+                                                'default_is_family_member': True,
+                                                'default_city': 'Vilanova i la Geltrú',
+                                                'default_zip': '08800',
+                                                'default_state_id': 426,
+                                                'default_country_id': 68
+                                                }"
+                                    mode="kanban">
+                                <kanban color="color">
+                                    <field name="color"/>
+                                    <field name="type"/>
+                                    <field name="is_company"/>
+                                    <templates>
+                                        <t t-name="card" class="flex-row">
+                                            <aside class="o_kanban_aside_full">
+                                                <field name="avatar_128" class="o_kanban_image_fill w-100" widget="image" options="{'img_class': 'object-fit-cover'}" alt="Contact image"/>
+                                            </aside>
+                                            <main class="ps-2 ps-md-0">
+                                                <field name="name" class="fw-bold"/>
+                                                <field name="function"/>
+                                                <field name="email" widget="email"/>
+                                                <div t-if="record.type.raw_value != 'contact'">
+                                                    <div>
+                                                        <field class="me-1" name="zip"/>
+                                                        <field name="city"/>
+                                                    </div>
+                                                    <field class="me-1" name="state_id"/>
+                                                    <field name="country_id"/>
+                                                </div>
+                                                <div t-if="record.phone.raw_value">Phone: <field name="phone"/></div>
+                                                <div t-if="record.mobile.raw_value">Mobile: <field name="mobile"/></div>
+                                            </main>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                                <form string="Contact / Address">
+                                    <sheet>
+                                        <group>
+                                            <group>
+                                                <field name="name" string="Contact Name" required="type == 'contact'" placeholder="e.g. New Address"/>
+                                                <label for="street" string="Address" />
+                                                <div class="o_address_format" name="div_address">
+                                                    <field name="street" placeholder="Street..." class="o_address_street"/>
+                                                    <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                                                    <field name="city" placeholder="City" class="o_address_city"/>
+                                                    <field name="state_id" class="o_address_state" placeholder="State" options="{'no_open': True, 'no_quick_create': True}" context="{'country_id': country_id, 'default_country_id': country_id, 'zip': zip}"/>
+                                                    <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+                                                </div>
+                                            </group>
+                                            <group>
+                                                <field name="email" widget="email"/>
+                                                <field name="mobile" widget="phone"/>
+                                                <field name="is_customer" string="To invoice" widget="boolean_toggle"/>
+                                                <field name="company_id" invisible="1"/>    <!-- Need to save value from parented record, cf onchange -->
+                                            </group>
+                                        </group>
+                                        <group>
+                                            <field name="comment" placeholder="Internal notes..." nolabel="1"/>
+                                        </group>
+                                        <field name="lang" invisible="True"/>  <!-- Need to add lang to save default value from parented record -->
+                                    </sheet>
+                                </form>
+                            </field>
+                        </page>
+                        <page name='meetings' string="Meetings">
+                            <field name="meeting_ids"/>
+                        </page>
+                        <page name='internal_notes' string="Internal Notes">
+                            <field name="comment" placeholder="Internal notes..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+            <!-- Acción para Students (listado) -->
+        <record id="students.action_students_student_list" model="ir.actions.act_window">
+            <field name="name">Students</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">list,form</field>
+            <field name="domain">[('is_student', '=', True)]</field>
+            <field name="context">{'default_is_student': True}</field>
+            <field name="view_ids" eval="[
+                (0, 0, {'view_mode': 'list', 'view_id': ref('students.view_student_list')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('students.view_student_form')})
+            ]"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,385 @@
+<odoo>
+    <record id="school0" model="students.school">
+        <field name="name">Escola Agnès de Sitges</field>
+        <field name="city">Sitges</field>
+        <field name="code">08062833</field>
+        <field name="address">pg. Margalló / pg. Puig de Sant Isidre</field>
+        <field name="phone">938114654</field>
+    </record>
+
+    <record id="school1" model="students.school">
+        <field name="name">Institut Alexandre Galí</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08047467</field>
+        <field name="address">c. Miquel Servet, s/n</field>
+        <field name="phone">938143585</field>
+    </record>
+
+    <record id="school2" model="students.school">
+        <field name="name">Institut Baix a mar</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08065354</field>
+        <field name="address">c. Àncora, 29</field>
+        <field name="phone">936571742</field>
+    </record>
+
+    <record id="school3" model="students.school">
+        <field name="name">Institut Can Puig</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08042056</field>
+        <field name="address">c. Joan Maragall, s/n</field>
+        <field name="phone">938961405</field>
+    </record>
+
+    <record id="school4" model="students.school">
+        <field name="name">Escola Canigó</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031666</field>
+        <field name="address">c. Canigó, 4</field>
+        <field name="phone">938154095</field>
+    </record>
+
+    <record id="school5" model="students.school">
+        <field name="name">Escola Cossetània</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08043917</field>
+        <field name="address">Ronda Ibèrica, 200</field>
+        <field name="phone">938933899</field>
+    </record>
+
+    <record id="school6" model="students.school">
+        <field name="name">Institut Cubelles</field>
+        <field name="city">Cubelles</field>
+        <field name="code">08057230</field>
+        <field name="address">c. Josep Pla, s/n</field>
+        <field name="phone">938955024</field>
+    </record>
+
+    <record id="school7" model="students.school">
+        <field name="name">Divina Providència</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031599</field>
+        <field name="address">c. Providència, 1</field>
+        <field name="phone">938930614</field>
+    </record>
+
+    <record id="school8" model="students.school">
+        <field name="name">Institut Dolors Mallafrè i Ros</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08045653</field>
+        <field name="address">c. Dr. Zamenhof, 57</field>
+        <field name="phone">938142204</field>
+    </record>
+
+    <record id="school9" model="students.school">
+        <field name="name">El Cim</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031496</field>
+        <field name="address">pl. dels Cotxes, 3</field>
+        <field name="phone">938930280</field>
+    </record>
+
+    <record id="school10" model="students.school">
+        <field name="name">Escola El Margalló</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08040412</field>
+        <field name="address">c. Margalló, 43</field>
+        <field name="phone">938152361</field>
+    </record>
+
+    <record id="school11" model="students.school">
+        <field name="name">Institut Escola El Morsell</field>
+        <field name="city">Olivella</field>
+        <field name="code">08077371</field>
+        <field name="address">av. Mas Milà, s/n</field>
+        <field name="phone">938959111</field>
+    </record>
+
+    <record id="school12" model="students.school">
+        <field name="name">Escola El Pi</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08027110</field>
+        <field name="address">c. Ildefons Cerdà, 3</field>
+        <field name="phone">938960295</field>
+    </record>
+
+    <record id="school13" model="students.school">
+        <field name="name">Escola Els Costerets</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08058957</field>
+        <field name="address">c. de Carç, 102</field>
+        <field name="phone">938961001</field>
+    </record>
+
+    <record id="school14" model="students.school">
+        <field name="name">Escola Pia de Sitges</field>
+        <field name="city">Sitges</field>
+        <field name="code">08029076</field>
+        <field name="address">c. Hort Gran, 8</field>
+        <field name="phone">938949534</field>
+    </record>
+
+    <record id="school15" model="students.school">
+        <field name="name">Escola Pia de Vilanova i la Geltrú</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031538</field>
+        <field name="address">rbla. Sama, 114-116</field>
+        <field name="phone">938150875</field>
+    </record>
+
+    <record id="school16" model="students.school">
+        <field name="name">Escola Esteve Barrachina</field>
+        <field name="city">Sitges</field>
+        <field name="code">08034667</field>
+        <field name="address">c. Rafael Llopart, s/n</field>
+        <field name="phone">938948142</field>
+    </record>
+
+    <record id="school17" model="students.school">
+        <field name="name">Institut Francesc Xavier Lluch i Rafecas</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031681</field>
+        <field name="address">c. Doctor Zamenhof, 30</field>
+        <field name="phone">938153767</field>
+    </record>
+
+    <record id="school18" model="students.school">
+        <field name="name">Escola Ginesta</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031484</field>
+        <field name="address">rbla. de Pep Ventura, 2</field>
+        <field name="phone">938930437</field>
+    </record>
+
+    <record id="school19" model="students.school">
+        <field name="name">Institut Joan Ramon Benaprès</field>
+        <field name="city">Sitges</field>
+        <field name="code">08043981</field>
+        <field name="address">Camí de la Fita, s/n</field>
+        <field name="phone">938943712</field>
+    </record>
+
+    <record id="school20" model="students.school">
+        <field name="name">Institut Joaquim Mir</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08043693</field>
+        <field name="address">av. Vilafranca, s/n</field>
+        <field name="phone">938933648</field>
+    </record>
+
+    <record id="school21" model="students.school">
+        <field name="name">Escola Josep Andreu - Charlie Rivel</field>
+        <field name="city">Cubelles</field>
+        <field name="code">08016811</field>
+        <field name="address">pg .Vilanova, 37-39</field>
+        <field name="phone">938950956</field>
+    </record>
+
+    <record id="school22" model="students.school">
+        <field name="name">Escola L'Aragai</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08034497</field>
+        <field name="address">c. Doctor Zamenhof, 20</field>
+        <field name="phone">938153078</field>
+    </record>
+
+    <record id="school23" model="students.school">
+        <field name="name">Escola L'Arjau</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08039586</field>
+        <field name="address">c. Àncora, 28</field>
+        <field name="phone">938151371</field>
+    </record>
+
+    <record id="school24" model="students.school">
+        <field name="name">Escola Les Parellades</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08061002</field>
+        <field name="address">c. Margarida Xirgú, 11</field>
+        <field name="phone">938964967</field>
+    </record>
+
+    <record id="school25" model="students.school">
+        <field name="name">Escola Les Roquetes</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08027134</field>
+        <field name="address">c. Miquel Servet, s/n</field>
+        <field name="phone">938930634</field>
+    </record>
+
+    <record id="school26" model="students.school">
+        <field name="name">Institut Les Vinyes</field>
+        <field name="city">Cubelles</field>
+        <field name="code">08067648</field>
+        <field name="address">av. Onze de Setembre, 66-67</field>
+        <field name="phone">938950859</field>
+    </record>
+
+    <record id="school27" model="students.school">
+        <field name="name">Escola Llebetx</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08043929</field>
+        <field name="address">Camí Sant Gervasi, s/n(Apart.corr.279)</field>
+        <field name="phone">938153745</field>
+    </record>
+
+    <record id="school28" model="students.school">
+        <field name="name">Institut Manuel de Cabanyes</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031711</field>
+        <field name="address">av. Francesc Macià, 110-114</field>
+        <field name="phone">938152250</field>
+    </record>
+
+    <record id="school29" model="students.school">
+        <field name="name">Escola Mar i Cel</field>
+        <field name="city">Cubelles</field>
+        <field name="code">08064751</field>
+        <field name="address">c. Clot del Bassó, 20-24/av.Pompeu Fabra</field>
+        <field name="phone">935184485</field>
+    </record>
+
+    <record id="school30" model="students.school">
+        <field name="name">Escola Maria Ossó</field>
+        <field name="city">Sitges</field>
+        <field name="code">08053583</field>
+        <field name="address">c. Ramon Dalmases, 2-10</field>
+        <field name="phone">938940713</field>
+    </record>
+
+    <record id="school31" model="students.school">
+        <field name="name">Escola Mediterrània</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08062781</field>
+        <field name="address">rda. de la Masia Nova, 7</field>
+        <field name="phone">938148411</field>
+    </record>
+
+    <record id="school32" model="students.school">
+        <field name="name">Escola Miquel Utrillo</field>
+        <field name="city">Sitges</field>
+        <field name="code">08029088</field>
+        <field name="address">Camí de la Fita, s/n</field>
+        <field name="phone">938943546</field>
+    </record>
+
+    <record id="school33" model="students.school">
+        <field name="name">Institut Montgròs</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08063904</field>
+        <field name="address">c. Joan Cuadras i Marcer, 1</field>
+        <field name="phone">938961220</field>
+    </record>
+
+    <record id="school34" model="students.school">
+        <field name="name">Institut Pla del Bosc</field>
+        <field name="city">Canyelles</field>
+        <field name="code">08073961</field>
+        <field name="address">c. de la Verge de Montserrat, 1</field>
+        <field name="phone">938973350</field>
+    </record>
+
+    <record id="school35" model="students.school">
+        <field name="name">Escola Pompeu Fabra</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031472</field>
+        <field name="address">rbla. Samà, 66</field>
+        <field name="phone">938154044</field>
+    </record>
+
+    <record id="school36" model="students.school">
+        <field name="name">Escola Riera de Ribes</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08058362</field>
+        <field name="address">av. Onze de setembre, s/n</field>
+        <field name="phone">938961585</field>
+    </record>
+
+    <record id="school37" model="students.school">
+        <field name="name">Sant Bonaventura</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031526</field>
+        <field name="address">pl. dels Franciscans, 4</field>
+        <field name="phone">938106511</field>
+    </record>
+
+    <record id="school38" model="students.school">
+        <field name="name">Escola Sant Jordi</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08061041</field>
+        <field name="address">c. Mare Isabel Ventosa, s/n</field>
+        <field name="phone">938140227</field>
+    </record>
+
+    <record id="school39" model="students.school">
+        <field name="name">Escola Sant Nicolau</field>
+        <field name="city">Canyelles</field>
+        <field name="code">08015399</field>
+        <field name="address">Camí de Romanguer, 80</field>
+        <field name="phone">938188880</field>
+    </record>
+
+    <record id="school40" model="students.school">
+        <field name="name">Escola Santa Eulàlia</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08034448</field>
+        <field name="address">c. de Puigmal, s/n</field>
+        <field name="phone">938932135</field>
+    </record>
+
+    <record id="school41" model="students.school">
+        <field name="name">Santa Teresa de Jesús</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08031502</field>
+        <field name="address">rbla. Principal, 71</field>
+        <field name="phone">938930617</field>
+    </record>
+
+    <record id="school42" model="students.school">
+        <field name="name">Institut Vinyet</field>
+        <field name="city">Sitges</field>
+        <field name="code">08061014</field>
+        <field name="address">c. Mestre Manel Torrens Girona, 2-6</field>
+        <field name="phone">938107132</field>
+    </record>
+
+    <record id="school43" model="students.school">
+        <field name="name">Escola Volerany</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08065275</field>
+        <field name="address">c. Castellet, 15</field>
+        <field name="phone">938149100</field>
+    </record>
+
+    <record id="school44" model="students.school">
+        <field name="name">Escola Vora del Mar</field>
+        <field name="city">Cubelles</field>
+        <field name="code">08060927</field>
+        <field name="address">c. Verge del Pilar, 10</field>
+        <field name="phone">938957515</field>
+    </record>
+
+    <record id="school45" model="students.school">
+        <field name="name">Institut Xaloc</field>
+        <field name="city">Sant Pere de Ribes</field>
+        <field name="code">08065342</field>
+        <field name="address">c. Guifré el Pilós, s/n</field>
+        <field name="phone">938930827</field>
+    </record>
+
+    <record id="school46" model="students.school">
+        <field name="name">EA de Vilanova i la Geltrú</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08038569</field>
+        <field name="address">pl. de les Casernes, 8</field>
+        <field name="phone">938932846</field>
+    </record>
+
+    <record id="school47" model="students.school">
+        <field name="name">Escola Ítaca</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="code">08061051</field>
+        <field name="address">rbla. d'Arnau de Vilanova, 65</field>
+        <field name="phone">936571185</field>
+    </record>
+</odoo>

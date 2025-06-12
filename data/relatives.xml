@@ -1,0 +1,412 @@
+<odoo>
+    <!-- Grupo 1 - Comparten dirección -->
+    <record id="parent0" model="res.partner">
+        <field name="name">Mikel López</field>
+        <field name="street">Riu Segura 26a</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">mlopez@gmail.com</field>
+        <field name="phone">686503045</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent1" model="res.partner">
+        <field name="name">Sara Martínez</field>
+        <field name="street">Riu Segura 26a</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">smartinez@gmail.com</field>
+        <field name="phone">677894521</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <!-- Grupo 2 - Comparten dirección -->
+    <record id="parent2" model="res.partner">
+        <field name="name">Jordi Pujol</field>
+        <field name="street">Av. Mediterrània 45</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">jpujol@gmail.com</field>
+        <field name="phone">612345678</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent3" model="res.partner">
+        <field name="name">Carles Pujol</field>
+        <field name="street">Av. Mediterrània 45</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">cpujol@gmail.com</field>
+        <field name="phone">623456789</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <!-- Grupo 3 - Comparten dirección -->
+    <record id="parent4" model="res.partner">
+        <field name="name">Anna García</field>
+        <field name="street">Carrer del Mar 12</field>
+        <field name="city">Cubelles</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08880</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">agarcia@gmail.com</field>
+        <field name="phone">634567890</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent5" model="res.partner">
+        <field name="name">Laura García</field>
+        <field name="street">Carrer del Mar 12</field>
+        <field name="city">Cubelles</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08880</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">lgarcia@gmail.com</field>
+        <field name="phone">645678901</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <!-- Grupo 4 - Comparten dirección -->
+    <record id="parent6" model="res.partner">
+        <field name="name">Marc Soler</field>
+        <field name="street">Plaça Major 3</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">msoler@gmail.com</field>
+        <field name="phone">656789012</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent7" model="res.partner">
+        <field name="name">Elena Soler</field>
+        <field name="street">Plaça Major 3</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">esoler@gmail.com</field>
+        <field name="phone">667890123</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <!-- Grupo 5 - Comparten dirección -->
+    <record id="parent8" model="res.partner">
+        <field name="name">David Torres</field>
+        <field name="street">Carrer de la Pau 8</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">dtorres@gmail.com</field>
+        <field name="phone">678901234</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent9" model="res.partner">
+        <field name="name">Claudia Torres</field>
+        <field name="street">Carrer de la Pau 8</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">ctorres@gmail.com</field>
+        <field name="phone">689012345</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <!-- Resto de registros individuales -->
+    <record id="parent10" model="res.partner">
+        <field name="name">Pau Casals</field>
+        <field name="street">Av. del Mar 15</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">pcasals@gmail.com</field>
+        <field name="phone">690123456</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent11" model="res.partner">
+        <field name="name">Marta Vidal</field>
+        <field name="street">Carrer de Sant Pere 22</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">mvidal@gmail.com</field>
+        <field name="phone">601234567</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent12" model="res.partner">
+        <field name="name">Roger Font</field>
+        <field name="street">Carrer de la Platja 7</field>
+        <field name="city">Cubelles</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08880</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">rfont@gmail.com</field>
+        <field name="phone">612345670</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent13" model="res.partner">
+        <field name="name">Silvia Martí</field>
+        <field name="street">Carrer del Vent 33</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">smarti@gmail.com</field>
+        <field name="phone">623456701</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent14" model="res.partner">
+        <field name="name">Oriol Bosch</field>
+        <field name="street">Carrer de la Lluna 5</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">obosch@gmail.com</field>
+        <field name="phone">634567012</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent15" model="res.partner">
+        <field name="name">Núria Costa</field>
+        <field name="street">Carrer del Sol 18</field>
+        <field name="city">Cubelles</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08880</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">ncosta@gmail.com</field>
+        <field name="phone">645670123</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent16" model="res.partner">
+        <field name="name">Albert Roca</field>
+        <field name="street">Carrer de les Flors 9</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">aroca@gmail.com</field>
+        <field name="phone">656701234</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent17" model="res.partner">
+        <field name="name">Cristina Serra</field>
+        <field name="street">Carrer del Cel 14</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">cserra@gmail.com</field>
+        <field name="phone">667012345</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent18" model="res.partner">
+        <field name="name">Javier Morales</field>
+        <field name="street">Carrer de la Muntanya 21</field>
+        <field name="city">Cubelles</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08880</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">jmorales@gmail.com</field>
+        <field name="phone">670123456</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent19" model="res.partner">
+        <field name="name">Alicia Pons</field>
+        <field name="street">Carrer del Bosc 6</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">apons@gmail.com</field>
+        <field name="phone">681234567</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent20" model="res.partner">
+        <field name="name">Sergi Vila</field>
+        <field name="street">Carrer de la Font 11</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">svila@gmail.com</field>
+        <field name="phone">692345678</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent21" model="res.partner">
+        <field name="name">Eva Montes</field>
+        <field name="street">Carrer del Pi 25</field>
+        <field name="city">Cubelles</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08880</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">emontes@gmail.com</field>
+        <field name="phone">603456789</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent23" model="res.partner">
+        <field name="name">Rut Clark</field>
+        <field name="street">Carrer major 30</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">rclark@gmail.com</field>
+        <field name="phone">612227890</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent22" model="res.partner">
+        <field name="name">Pol Navarro</field>
+        <field name="street">Carrer de la Marina 30</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">pnavarro@gmail.com</field>
+        <field name="phone">614567890</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent24" model="res.partner">
+        <field name="name">Marc Gimeno</field>
+        <field name="street">Carrer de la Plaça 2</field>
+        <field name="city">Cubelles</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08880</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">mgimeno@gmail.com</field>
+        <field name="phone">636789012</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent25" model="res.partner">
+        <field name="name">Carla Domènech</field>
+        <field name="street">Carrer del Riu 17</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">cdomenech@gmail.com</field>
+        <field name="phone">647890123</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent26" model="res.partner">
+        <field name="name">Arnau Mas</field>
+        <field name="street">Carrer de la Costa 12</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">amas@gmail.com</field>
+        <field name="phone">658901234</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent27" model="res.partner">
+        <field name="name">Núria Riera</field>
+        <field name="street">Carrer del Bosc 9</field>
+        <field name="city">Cubelles</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08880</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">nriera@gmail.com</field>
+        <field name="phone">669012345</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+
+    <record id="parent28" model="res.partner">
+        <field name="name">Héctor Mir</field>
+        <field name="street">Carrer de la Serra 4</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08800</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">hmir@gmail.com</field>
+        <field name="phone">670123456</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+        <field name="customer_rank" eval="1"/>
+    </record>
+
+    <record id="parent29" model="res.partner">
+        <field name="name">Laura Bosch</field>
+        <field name="street">Carrer del Mar 22</field>
+        <field name="city">Sitges</field>
+        <field name="state_id" ref="base.state_es_b"/>
+        <field name="zip">08870</field>
+        <field name="country_id" ref="base.es"/>
+        <field name="email">lbosch@gmail.com</field>
+        <field name="phone">681234567</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="True"/>
+    </record>
+</odoo>

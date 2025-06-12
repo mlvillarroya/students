@@ -1,0 +1,316 @@
+<odoo>
+
+    <record id="student0" model="res.partner">
+        <field name="name">Alex</field>
+        <field name="lastname">López Sala</field>
+        <field name="email">alex.lopez.sala.2013@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2012-05-15</field>
+        <field name="school_id" ref="school5"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent0'), ref('parent1')])]"/>
+    </record>
+
+    <record id="student1" model="res.partner">
+        <field name="name">Anna</field>
+        <field name="lastname">Martínez García</field>
+        <field name="email">anna.martinez@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2013-07-22</field>
+        <field name="school_id" ref="school3"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent2'), ref('parent3')])]"/>
+    </record>
+
+    <record id="student2" model="res.partner">
+        <field name="name">Jordi</field>
+        <field name="lastname">Pujol Casas</field>
+        <field name="email">jordi.pujol@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2012-11-05</field>
+        <field name="school_id" ref="school7"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent4'), ref('parent5')])]"/>
+    </record>
+
+    <record id="student3" model="res.partner">
+        <field name="name">Claudia</field>
+        <field name="lastname">Torres Navarro</field>
+        <field name="email">claudia.torres@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2014-03-18</field>
+        <field name="school_id" ref="school2"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent6'), ref('parent7')])]"/>
+    </record>
+
+    <record id="student4" model="res.partner">
+        <field name="name">David</field>
+        <field name="lastname">Soler Mas</field>
+        <field name="email">david.soler@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2011-09-30</field>
+        <field name="school_id" ref="school9"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent8'), ref('parent9')])]"/>
+    </record>
+
+    <!-- Alumnos con un solo familiar -->
+    <record id="student5" model="res.partner">
+        <field name="name">Elena</field>
+        <field name="lastname">Vidal Costa</field>
+        <field name="email">elena.vidal@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2013-12-10</field>
+        <field name="school_id" ref="school1"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent10')])]"/>
+    </record>
+
+    <record id="student6" model="res.partner">
+        <field name="name">Roger</field>
+        <field name="lastname">Font Pons</field>
+        <field name="email">roger.font@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2012-06-25</field>
+        <field name="school_id" ref="school4"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent11')])]"/>
+    </record>
+
+    <record id="student7" model="res.partner">
+        <field name="name">Silvia</field>
+        <field name="lastname">Martí Roca</field>
+        <field name="email">silvia.marti@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2014-01-15</field>
+        <field name="school_id" ref="school6"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent12')])]"/>
+    </record>
+
+    <record id="student8" model="res.partner">
+        <field name="name">Oriol</field>
+        <field name="lastname">Bosch Serra</field>
+        <field name="email">oriol.bosch@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2011-08-08</field>
+        <field name="school_id" ref="school8"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent13')])]"/>
+    </record>
+
+    <record id="student9" model="res.partner">
+        <field name="name">Núria</field>
+        <field name="lastname">Costa Mir</field>
+        <field name="email">nuria.costa@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2013-04-20</field>
+        <field name="school_id" ref="school10"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent14')])]"/>
+    </record>
+
+    <record id="student10" model="res.partner">
+        <field name="name">Albert</field>
+        <field name="lastname">Roca Domènech</field>
+        <field name="email">albert.roca@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2012-10-12</field>
+        <field name="school_id" ref="school5"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent15')])]"/>
+    </record>
+<record id="student11" model="res.partner">
+        <field name="name">Cristina</field>
+        <field name="lastname">Serra Bosch</field>
+        <field name="email">cristina.serra@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2013-05-14</field>
+        <field name="school_id" ref="school1"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent16')])]"/>
+    </record>
+
+    <record id="student12" model="res.partner">
+        <field name="name">Javier</field>
+        <field name="lastname">Morales Vidal</field>
+        <field name="email">javier.morales@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2012-08-27</field>
+        <field name="school_id" ref="school3"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent17')])]"/>
+    </record>
+
+    <record id="student13" model="res.partner">
+        <field name="name">Alicia</field>
+        <field name="lastname">Pons Riera</field>
+        <field name="email">alicia.pons@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2014-02-03</field>
+        <field name="school_id" ref="school5"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent18')])]"/>
+    </record>
+
+    <record id="student14" model="res.partner">
+        <field name="name">Sergi</field>
+        <field name="lastname">Vila Mas</field>
+        <field name="email">sergi.vila@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2011-11-19</field>
+        <field name="school_id" ref="school7"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent19')])]"/>
+    </record>
+
+    <record id="student15" model="res.partner">
+        <field name="name">Eva</field>
+        <field name="lastname">Montes Soler</field>
+        <field name="email">eva.montes@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2013-09-08</field>
+        <field name="school_id" ref="school9"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent20')])]"/>
+    </record>
+
+    <record id="student16" model="res.partner">
+        <field name="name">Pol</field>
+        <field name="lastname">Navarro Costa</field>
+        <field name="email">pol.navarro@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2012-04-11</field>
+        <field name="school_id" ref="school2"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent21')])]"/>
+    </record>
+
+    <record id="student17" model="res.partner">
+        <field name="name">Gemma</field>
+        <field name="lastname">Ferrer Pujol</field>
+        <field name="email">gemma.ferrer@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2014-07-25</field>
+        <field name="school_id" ref="school4"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent22')])]"/>
+    </record>
+
+    <record id="student18" model="res.partner">
+        <field name="name">Marc</field>
+        <field name="lastname">Gimeno Torres</field>
+        <field name="email">marc.gimeno@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2011-12-30</field>
+        <field name="school_id" ref="school6"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent23')])]"/>
+    </record>
+
+    <record id="student19" model="res.partner">
+        <field name="name">Carla</field>
+        <field name="lastname">Domènech Roca</field>
+        <field name="email">carla.domenech@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2013-03-17</field>
+        <field name="school_id" ref="school8"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent24')])]"/>
+    </record>
+
+    <record id="student20" model="res.partner">
+        <field name="name">Arnau</field>
+        <field name="lastname">Mas Ferrer</field>
+        <field name="email">arnau.mas@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2012-10-05</field>
+        <field name="school_id" ref="school10"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent25')])]"/>
+    </record>
+
+    <!-- Estudiantes 21-25 -->
+    <record id="student21" model="res.partner">
+        <field name="name">Núria</field>
+        <field name="lastname">Riera Gimeno</field>
+        <field name="email">nuria.riera@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2014-01-22</field>
+        <field name="school_id" ref="school1"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent26')])]"/>
+    </record>
+
+    <record id="student22" model="res.partner">
+        <field name="name">Héctor</field>
+        <field name="lastname">Mir Domènech</field>
+        <field name="email">hector.mir@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2011-07-14</field>
+        <field name="school_id" ref="school3"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent27')])]"/>
+    </record>
+
+    <record id="student23" model="res.partner">
+        <field name="name">Laura</field>
+        <field name="lastname">Bosch Navarro</field>
+        <field name="email">laura.bosch@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2013-06-09</field>
+        <field name="school_id" ref="school5"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent28')])]"/>
+    </record>
+
+    <record id="student24" model="res.partner">
+        <field name="name">Pau</field>
+        <field name="lastname">Casals Montes</field>
+        <field name="email">pau.casals@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2012-12-01</field>
+        <field name="school_id" ref="school7"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent29')])]"/>
+    </record>
+
+    <record id="student25" model="res.partner">
+        <field name="name">Marta</field>
+        <field name="lastname">Vidal Riera</field>
+        <field name="email">marta.vidal@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="True"/>
+        <field name="birthdate">2014-04-18</field>
+        <field name="school_id" ref="school9"/>
+        <field name="relatives_ids" eval="[(6, 0, [ref('parent0')])]"/>
+    </record>
+
+</odoo>

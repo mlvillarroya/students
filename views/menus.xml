@@ -1,0 +1,24 @@
+<odoo>
+    <!-- Main Menu -->
+    <menuitem
+        id="menu_students_root"
+        name="Academy"
+        sequence="10"
+        web_icon="students,static/description/icon.png"
+    />
+
+    <menuitem
+        id="menu_students_meetings"
+        name="Meetings"
+        parent="menu_students_root"
+        action="action_students_meeting_list"
+    />
+    <!-- Submenús -->
+    <menuitem
+        id="menu_students_students"
+        name="Students"
+        parent="menu_students_root"
+        action="action_students_student_list"
+    />
+
+</odoo>
