@@ -19,6 +19,7 @@ Allows to manage the students and appointments
     'depends': ['base', 'account', 'mail'],  # Dependencias clave
     # always loaded
     'data': [
+        'security/security.xml',
         'security/ir.model.access.csv',
         'views/students_views.xml',
         'views/meetings_views.xml',
@@ -27,6 +28,8 @@ Allows to manage the students and appointments
         'data/schools.xml',
         'data/relatives.xml',
         'data/students.xml',
+        'data/teachers.xml',
+        'data/offices.xml',
         'data/meetings.xml',
     ],
     # only loaded in demonstration mode

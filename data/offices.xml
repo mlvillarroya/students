@@ -1,0 +1,20 @@
+<odoo>
+
+    <record id="office0" model="students.office">
+        <field name="name">Online</field>
+        <field name="city"> </field>
+        <field name="address"> </field>
+        <field name="phone"> </field>
+        <field name="email"> </field>
+    </record>
+
+    <record id="office1" model="students.office">
+        <field name="name">La tutoria Vilanova</field>
+        <field name="city">Vilanova i la Geltrú</field>
+        <field name="address">Carrer de l'Alosa 14</field>
+        <field name="phone">611992233</field>
+        <field name="email">vilanova@latutoria.org</field>
+    </record>
+
+</odoo>
+

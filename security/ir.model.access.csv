@@ -1,4 +1,13 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_students_res_partner,students.res_partner,model_res_partner,base.group_user,1,1,1,1
-access_students_meeting,students.meeting,model_students_meeting,base.group_user,1,1,1,1
-access_students_school,students.school,model_students_school,base.group_user,1,1,1,1
+access_admin_students_res_partner,students.admin_res_partner,model_res_partner,group_students_administrador,1,1,1,1
+access_admin_students_meeting,students.admin_meeting,model_students_meeting,group_students_administrador,1,1,1,1
+access_admin_students_school,students.admin_school,model_students_school,group_students_administrador,1,1,1,1
+access_admin_students_office,students.admin_office,model_students_office,group_students_administrador,1,1,1,1
+access_teacher_students_res_partner,students.teacher_res_partner,model_res_partner,group_students_teacher,1,,,
+access_teacher_students_meeting,students.teacher_meeting,model_students_meeting,group_students_teacher,1,1,1,1
+access_teacher_students_school,students.teacher_school,model_students_school,group_students_teacher,1,,,
+access_teacher_students_office,students.teacher_office,model_students_office,group_students_teacher,1,,,
+access_student_students_res_partner,students.student_res_partner,model_res_partner,group_students_student,1,,,
+access_student_students_meeting,students.student_meeting,model_students_meeting,group_students_student,1,,,
+access_student_students_school,students.student_school,model_students_school,group_students_student,1,,,
+access_student_students_office,students.student_office,model_students_office,group_students_student,1,,,

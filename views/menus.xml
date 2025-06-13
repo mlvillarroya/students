@@ -5,6 +5,7 @@
         name="Academy"
         sequence="10"
         web_icon="students,static/description/icon.png"
+        groups="group_students_administrador,group_students_teacher,group_students_student"
     />
 
     <menuitem
@@ -12,6 +13,7 @@
         name="Meetings"
         parent="menu_students_root"
         action="action_students_meeting_list"
+        groups="group_students_administrador,group_students_teacher,group_students_student"
     />
     <!-- Submenús -->
     <menuitem
@@ -19,6 +21,7 @@
         name="Students"
         parent="menu_students_root"
         action="action_students_student_list"
+        groups="group_students_administrador,group_students_teacher"
     />
 
 </odoo>

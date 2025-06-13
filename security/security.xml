@@ -1,0 +1,36 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Category -->
+        <record id="module_category_education" model="ir.module.category">
+            <field name="name">Education</field>
+            <field name="description">Student modules</field>
+            <field name="sequence">100</field>
+        </record>
+
+        <!-- Grupo Alumno -->
+        <record id="group_students_student" model="res.groups">
+            <field name="name">Student or relative</field>
+            <field name="category_id" ref="module_category_education"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <!-- Grupo Profesor -->
+        <record id="group_students_teacher" model="res.groups">
+            <field name="name">Teacher</field>
+            <field name="category_id" ref="module_category_education"/>
+            <field name="implied_ids" eval="[(4, ref('group_students_student'))]"/>
+        </record>
+
+        <!-- Grupo Administrador -->
+        <record id="group_students_administrador" model="res.groups">
+            <field name="name">Students administrador</field>
+            <field name="category_id" ref="module_category_education"/>
+            <field name="implied_ids" eval="[(4, ref('group_students_teacher'))]"/>
+        </record>
+
+        <!-- Modificar el grupo system existente para añadir tu grupo como implícito -->
+        <record id="base.group_system" model="res.groups">
+            <field name="implied_ids" eval="[(4, ref('group_students_administrador'))]"/>
+        </record>
+    </data>
+</odoo>

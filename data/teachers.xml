@@ -1,0 +1,58 @@
+<odoo>
+
+    <record id="teacher1" model="res.partner">
+        <field name="name">Marcial</field>
+        <field name="lastname">Lafuente Estefanía</field>
+        <field name="email">marcial.lafuente3@gmail.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="False"/>
+        <field name="is_teacher" eval="True"/>
+        <field name="phone">6592331211</field>
+    </record>
+
+    <record id="teacher2" model="res.partner">
+        <field name="name">Laura</field>
+        <field name="lastname">Gómez Martínez</field>
+        <field name="email">laura.gomez@example.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="False"/>
+        <field name="is_teacher" eval="True"/>
+        <field name="phone">612345678</field>
+    </record>
+
+    <record id="teacher3" model="res.partner">
+        <field name="name">Carlos</field>
+        <field name="lastname">Ruiz Fernández</field>
+        <field name="email">carlos.ruiz@example.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="False"/>
+        <field name="is_teacher" eval="True"/>
+        <field name="phone">623456789</field>
+    </record>
+
+    <record id="teacher4" model="res.partner">
+        <field name="name">Ana</field>
+        <field name="lastname">Sánchez López</field>
+        <field name="email">ana.sanchez@example.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="False"/>
+        <field name="is_teacher" eval="True"/>
+        <field name="phone">634567890</field>
+    </record>
+
+    <record id="teacher5" model="res.partner">
+        <field name="name">David</field>
+        <field name="lastname">Pérez García</field>
+        <field name="email">david.perez@example.com</field>
+        <field name="is_company" eval="False"/>
+        <field name="is_family_member" eval="False"/>
+        <field name="is_student" eval="False"/>
+        <field name="is_teacher" eval="True"/>
+        <field name="phone">645678901</field>
+    </record>
+
+</odoo>

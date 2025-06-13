@@ -3,7 +3,9 @@
 
     <!-- Día 1 -->
     <record id="meeting1" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student1"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Tècniques d'estudi</field>
         <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -14,7 +16,9 @@
     </record>
 
     <record id="meeting2" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student2"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Comprensió lectora</field>
         <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -25,7 +29,9 @@
     </record>
 
     <record id="meeting3" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student3"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Gestió de l'estrès</field>
         <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -36,7 +42,9 @@
     </record>
 
     <record id="meeting4" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student4"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Memorització efectiva</field>
         <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -47,7 +55,9 @@
     </record>
 
     <record id="meeting5" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student5"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Resolució de problemes</field>
         <field name="date" eval="(datetime.now() + timedelta(days=1)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -59,7 +69,9 @@
 
     <!-- Día 2 -->
     <record id="meeting6" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student6"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Tècniques d'estudi</field>
         <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -70,7 +82,9 @@
     </record>
 
     <record id="meeting7" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student7"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Expressió escrita</field>
         <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -81,7 +95,9 @@
     </record>
 
     <record id="meeting8" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student8"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Memorització efectiva</field>
         <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -92,7 +108,9 @@
     </record>
 
     <record id="meeting9" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student9"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Resolució de problemes matemàtics</field>
         <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -103,7 +121,9 @@
     </record>
 
     <record id="meeting10" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student10"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Lectura ràpida</field>
         <field name="date" eval="(datetime.now() + timedelta(days=2)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -115,7 +135,9 @@
 
     <!-- Día 3 -->
     <record id="meeting11" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student11"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Organització d'apunts</field>
         <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -126,7 +148,9 @@
     </record>
 
     <record id="meeting12" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student12"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Expressió oral</field>
         <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -137,7 +161,9 @@
     </record>
 
     <record id="meeting13" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student13"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Gestió del temps</field>
         <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -148,7 +174,9 @@
     </record>
 
     <record id="meeting14" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student14"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Investigació acadèmica</field>
         <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -159,7 +187,9 @@
     </record>
 
     <record id="meeting15" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student15"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Autoavaluació</field>
         <field name="date" eval="(datetime.now() + timedelta(days=3)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -171,7 +201,9 @@
 
     <!-- Día 4 - Reuniones 16 a 20 -->
     <record id="meeting16" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student16"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Tècniques de repàs</field>
         <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -182,7 +214,9 @@
     </record>
 
     <record id="meeting17" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student17"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Estratègies per a exàmens tipus test</field>
         <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -193,7 +227,9 @@
     </record>
 
     <record id="meeting18" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student18"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Connexió entre conceptes</field>
         <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -204,7 +240,9 @@
     </record>
 
     <record id="meeting19" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student19"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Gestió d'ansietat</field>
         <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -215,7 +253,9 @@
     </record>
 
     <record id="meeting20" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student20"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Ús de tecnologia</field>
         <field name="date" eval="(datetime.now() + timedelta(days=4)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -227,7 +267,9 @@
 
     <!-- Día 5 -->
     <record id="meeting21" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student21"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Preparació d'exàmens</field>
         <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=14, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -238,7 +280,9 @@
     </record>
 
     <record id="meeting22" model="students.meeting">
+        <field name="office_id" ref="office0"/>
         <field name="student_id" ref="student22"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Concentració</field>
         <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=15, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -249,7 +293,9 @@
     </record>
 
     <record id="meeting23" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student23"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Ús de mapes mentals</field>
         <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=16, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -260,7 +306,9 @@
     </record>
 
     <record id="meeting24" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student24"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Autoavaluació</field>
         <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=17, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>
@@ -271,7 +319,9 @@
     </record>
 
     <record id="meeting25" model="students.meeting">
+        <field name="office_id" ref="office1"/>
         <field name="student_id" ref="student25"/>
+        <field name="teacher_id" ref="teacher1"/>
         <field name="subject">Planificació a llarg termini</field>
         <field name="date" eval="(datetime.now() + timedelta(days=5)).replace(hour=18, minute=0, second=0).strftime('%Y-%m-%d %H:%M:%S')"/>
         <field name="duration">1</field>

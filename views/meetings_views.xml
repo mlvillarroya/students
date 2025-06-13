@@ -37,8 +37,15 @@
                             <field name="duration" string="Duration (hours)"/>
                         </group>
                         <group>
-                            <field name="notes" string="Comentarios" placeholder="Detalles de la reunión..." nolabel="1"/>
+                            <field name="teacher_id" string="Teacher"
+                                   domain="[('is_teacher', '=', True)]"
+                                   context="{'default_is_teacher': True}"/>
+                                    <!-- Añade 'form_view_ref': 'tu_modulo.view_partner_teacher_form' para un formulario personalizado -->
+                            <field name="office_id" string="Office" />
                         </group>
+                    </group>
+                    <group>
+                            <field name="notes" string="Comentarios" placeholder="Detalles de la reunión..." />
                     </group>
                 </sheet>
             </form>
