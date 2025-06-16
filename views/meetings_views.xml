@@ -33,7 +33,7 @@
                     <group>
                         <group>
                             <field name="student_id" string="Student" context="{'form_view_ref': 'students.view_student_form'}"/>
-                            <field name="date" string="Date amd time"/>
+                            <field name="date" string="Date and time"/>
                             <field name="duration" string="Duration (hours)"/>
                         </group>
                         <group>

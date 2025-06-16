@@ -22,6 +22,7 @@ Allows to manage the students and appointments
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/students_views.xml',
+        'views/teachers_views.xml',
         'views/meetings_views.xml',
         'views/menus.xml',
         'views/templates.xml',

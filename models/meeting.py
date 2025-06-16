@@ -22,7 +22,9 @@ class Meeting(models.Model):
         current_values = {
             'subject': self.subject,
             'duration': self.duration,
-            'student_id': self.student_id.id
+            'student_id': self.student_id.id,
+            'teacher_id': self.teacher_id.id,
+            'office_id': self.office_id.id
         }
 
         # Crear acción para abrir nuevo formulario
@@ -36,6 +38,8 @@ class Meeting(models.Model):
                 'default_subject': current_values.get('subject'),
                 'default_duration': current_values.get('duration'),
                 'default_student_id': current_values.get('student_id'),
+                'default_teacher_id': current_values.get('teacher_id'),
+                'default_office_id': current_values.get('office_id'),
             }
         }
 

@@ -37,6 +37,12 @@ class ResPartner(models.Model):
         string="Meetings"
     )
 
+    meeting_teacher_ids = fields.One2many(
+        'students.meeting',
+        'teacher_id',
+        string="Meetings as Teacher"
+    )
+
     school_id = fields.Many2one("students.school", string="School")
 
     @api.depends('relatives_ids')

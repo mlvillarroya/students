@@ -23,5 +23,18 @@
         action="action_students_student_list"
         groups="group_students_administrador,group_students_teacher"
     />
-
+    <!-- Submenús -->
+    <menuitem
+        id="menu_students_config"
+        name="Config"
+        parent="menu_students_root"
+        groups="group_students_administrador"
+    />
+    <menuitem
+        id="menu_students_teachers"
+        name="Teachers"
+        parent="menu_students_config"
+        action="action_students_teacher_list"
+        groups="group_students_administrador"
+    />
 </odoo>
